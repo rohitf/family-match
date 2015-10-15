@@ -1,0 +1,24 @@
+
+<template name="nav">
+	<nav class="blue-grey">
+		<div class="nav-wrapper ">
+			<a href="/" id="title">Falor Directory</a>
+			<a href="#" data-activates="mobile-demo" id="hamburger" class="button-collapse"><i class="material-icons">menu</i></a>
+			<span>Menu</span>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="search">Home</a></li>
+				<li><a href="profile">Profile</a></li>
+				<li><a href="/about">About</a></li>
+				<!-- <li><a href="/">Feedback</a></li> -->
+				<li><a href="/" id="logout">Logout</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><i class="material-icons left">search</i><a href="search">Home</a></li>
+				 <li><i class="material-icons left">person</i><a onclick="removeMenu(true)"  href="profile">Profile</a></li>
+				<li><i class="material-icons left">info</i><a href="">About</a></li>
+				<!-- <li><i class="material-icons left">comment</i><a href="">Feedback</a></li> -->
+				<li><i class="material-icons left">vpn_key</i><a id="logout">Log Out</a></li>
+			</ul>
+		</div>
+	</nav>
+</template>

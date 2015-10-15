@@ -1,0 +1,6 @@
+BUGS
+
+
+TODO
+- Add fields to profile form & cards
+- Link tel numbers

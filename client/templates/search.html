@@ -1,0 +1,24 @@
+<template name="search">
+	<div class="row grey lighten-2" id="top">
+	<h6 class="center-align teal white-text col s12">Connect with <span>500+</span> members of the Falor Family</h6>
+	<div class="col s12">
+			<h5 class="teal-text col s12 m6 l4 offset-l4 offset-m3 center-align">Who do you want to contact?</h5>
+			<div class="row">
+				<div class="input-field col l4 s12 offset-l4">
+					<input onsubmit="return false" id="search" value={{searchTerm}} type="text">
+					<label for="search">Search by name, city, or profession</label>
+				</div>
+			</div>
+	</div>
+</div>
+{{> list}}
+<script type="text/javascript">
+$(function(){	
+if($('input').val() != "")
+	$('label').hide();
+})
+$('input').focus(function(){
+	$('label').show();
+});
+</script>
+</template>

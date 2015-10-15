@@ -1,0 +1,264 @@
+.button-collapse
+{
+    margin-left: 10px;
+}
+
+h5
+{
+    font-size: 1.4em;
+
+    color: teal;
+}
+
+.nav-wrapper span
+{
+    display: none;
+}
+
+.nav-wrapper #title
+{
+    font-size: 1.6em;
+
+    margin: 0 auto;
+    margin-left: calc(50% - 220px);
+}
+
+.card
+{
+    transition: opacity .5s; 
+
+    opacity: 1;
+}
+
+.card.animate
+{
+    opacity: 0;
+}
+
+.details
+{
+    transition: opacity 1s; 
+
+    opacity: 1;
+}
+
+.details.animate
+{
+    opacity: 0;
+}
+
+#number
+{
+    cursor: pointer; 
+
+    color: #0399e3;
+}
+
+#profilePic{
+  width: 100%;
+  display: inline;
+  margin-bottom: 20px;
+  margin-top: .3em;
+}
+
+h6,
+h4
+{
+    font-size: 1.25em !important;
+    font-weight: lighter;
+    line-height: 1.2em !important;
+
+    margin-top: -20px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+#aboutStuff{
+  margin-top: 50px;
+  font-size: 1.6em;
+}
+
+#aboutStuff a{
+    text-decoration: underline;
+}
+
+h4
+{
+    font-size: 1.7em !important;
+}
+
+#logout:hover
+{
+    cursor: pointer;
+}
+
+form
+{
+    margin-top: 10px;
+    /* label color */
+    /* label focus color */
+    /* label underline focus color */
+    /* icon prefix focus color */
+}
+form #person
+{
+    font-size: 2.5em;
+
+    margin-top: 5px;
+    margin-left: -5px;
+
+    color: teal;
+}
+form ::-webkit-input-placeholder
+{
+    color: #aaa;
+}
+form .input-field label
+{
+    color: #aaa;
+}
+form .input-field input[type=text]:focus + label
+{
+    color: teal;
+}
+form .input-field input
+{
+    font-size: 1.5em;
+}
+form .input-field input:focus
+{
+    border-bottom: 1px solid teal;
+    box-shadow: 0 1px 0 0 teal;
+}
+form .input-field .prefix.active
+{
+    color: #000;
+}
+form .input-field
+{
+    margin-top: 0rem;
+}
+
+h6 > span
+{
+    font-size: 1.5em;
+}
+
+.side-nav i
+{
+    margin-left: 15%; 
+
+    color: #000;
+}
+
+#mobile-demo
+{
+    background: teal;
+}
+#mobile-demo a,
+#mobile-demo i
+{
+    color: white !important;
+}
+
+.flatui
+{
+    color: white; 
+    background: teal;
+}
+
+.row
+{
+    margin-bottom: 10px;
+}
+
+hr
+{
+    width: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+
+    color: red;
+    border-top: 1px dashed black;
+}
+
+#top
+{
+    margin-top: 0;
+    padding-top: 20px; 
+
+    background: #eee;
+}
+
+.nav-wrapper
+{
+    text-align: center;
+}
+
+.card-title
+{
+    font-size: 1.7em !important;
+
+    cursor: pointer;
+}
+
+.card li
+{
+    font-size: 1.2em;
+    line-height: 1.7em; 
+
+    list-style: none;
+
+    cursor: pointer;
+}
+
+body
+{
+    background: #eee;
+}
+
+#search
+{
+    font-size: 1.5em;
+}
+
+.card
+{
+    margin-top: 0 !important;
+}
+
+@media (max-width: 992px)
+{
+    .brand-logo
+    {
+        margin-left: -9%;
+    }
+
+    .nav-wrapper span
+    {
+        font-size: 1em; 
+
+        position: absolute;
+        top: 0;
+        left: 50px;
+
+        display: block;
+    }
+}
+@media (max-width: 660px)
+{
+    .nav-wrapper #title
+    {
+        font-size: 1.6em; 
+
+        position: absolute;
+        right: 10px;
+    }
+
+    .side-nav i
+    {
+        margin-top: 18px;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */

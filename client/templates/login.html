@@ -1,0 +1,37 @@
+<template name="login">
+	<script>
+		if(Session.get('user_id')){
+		Router.go('/search');
+	}
+	</script>
+	<div class="row" id="top">
+	<h6 class="center-align teal white-text col s12">Thank you for visiting the <b>Falor Family Directory</b>. To verify your identity <b>(one time only)</b>, please answer the questions below.</h6>
+		<form class="col s12">
+			<h5 class="col s12 m6 l4 offset-l4 offset-m3">What is your name?</h5>
+			<div class="row">
+				<div class="input-field col l4 s12 offset-l4">
+					<i id="person" class="material-icons prefix">account_circle</i>
+					<input id="my_name" type="text">
+					<label for="my_name">Tap/Click here to type your name</label>
+				</div>
+			</div>
+			<h5 class="col s12 m6 l4 offset-l4 offset-m3">What is your primary mobile number?</h5>
+			<div class="row">
+				<div class="input-field col l4 s12 offset-l4">
+					<i id="person" class="material-icons prefix">phone</i>
+					<input type="tel" id="my_number">
+				</div>
+			</div>
+			<h5 class="col s12 m6 l4 offset-l4 offset-m3">What is your date of birth?</h5>
+			<div class="row">
+				<div class="input-field col l4 s12 offset-l4">
+					<i id="person" class="material-icons prefix">today</i>
+					<input type="date" id="my_date" max="2015-12-31">
+				</div>
+			</div>
+			<div class="row center-align">
+				<a class="waves-effect waves-light btn-flat flatui" id="login_button"><i class="material-icons right">trending_flat</i>Next</a>
+		</div>
+	</form>
+</div>
+</template>

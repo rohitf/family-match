@@ -1,0 +1,33 @@
+<template name="profile">
+	<div class="row" id="top">
+	<h4 class="center-align teal white-text col s12"><b>Verify</b> & <b>Update</b> your info</h4>
+	{{#Animate}}
+		<form class="animate details col s12">
+			<h5 class="col s12 m6 l4 offset-l4 offset-m3">Your Name</h5>
+			<div class="row">
+				<div class="input-field col l4 s12 offset-l4">
+					<i id="person" class="material-icons prefix">account_circle</i>
+					<input id="edit_name" type="text" value={{user.Name}}>
+				</div>
+			</div>
+			<h5 class="col s12 m6 l4 offset-l4 offset-m3">Your Primary Mobile Number</h5>
+			<div class="row">
+				<div class="input-field col l4 s12 offset-l4">
+					<i id="person" class="material-icons prefix">phone</i>
+					<input id="edit_number" type="tel" value={{user.Number}}>
+				</div>
+			</div>
+			<h5 class="col s12 m6 l4 offset-l4 offset-m3">Your Primary Email</h5>
+			<div class="row">
+				<div class="input-field col l4 s12 offset-l4">
+					<i id="person" class="material-icons prefix">mail</i>
+					<input id="edit_email" type="text" value= {{user.Email}}>
+				</div>
+			</div>
+			<div class="row center-align">
+				<a class="waves-effect waves-light btn-flat flatui" id="login_button"><i class="material-icons right">account_circle</i>Save & Update</a>
+		</div>
+	</form>
+	{{/Animate}}
+</div>
+</template>

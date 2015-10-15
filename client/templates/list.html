@@ -1,0 +1,18 @@
+<template name="list">
+	<div class="container">
+		<div class="row">
+			{{#each results}}
+				<div class="col s12 m12 l6">
+					<div class="card blue-grey darken-4">
+						<div class="card-content center-align white-text">
+							<span class="card-title">{{Name}}</span>
+							<li>{{Email}}</li>
+							<li class="light-blue-text text-lighten-1" id="number">{{Number}}</li>
+							<li>{{City}}</li>
+						</div>
+					</div>
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</template>

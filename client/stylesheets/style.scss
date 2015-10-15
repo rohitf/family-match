@@ -1,0 +1,168 @@
+$primary-color: teal;
+    
+.button-collapse{
+  margin-left: 10px;
+}
+h5{
+  color: $primary-color;
+}
+.nav-wrapper span{
+  display: none;
+}
+.nav-wrapper #title{
+  margin: 0 auto;
+  font-size: 1.6em;
+  margin-left: calc(50% - 220px);
+}
+
+#feedbacks .card{
+  margin-top: 20px !important;
+}
+.card{
+    opacity: 1; // value after the animate class got removed
+    transition: opacity .5s;
+}
+.card.animate {
+    opacity: 0; // initial value
+}
+
+.details{
+    opacity: 1; // value after the animate class got removed
+    transition: opacity 1s;
+}
+.details.animate {
+    opacity: 0; // initial value
+}
+
+#number{
+  color: #0399e3;
+  cursor: pointer;
+}
+
+h6, h4{
+  margin-top: -20px;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  line-height: 1.5em !important;
+  font-size: 1.3em !important;
+}
+
+h4{
+  font-size: 1.7em !important;
+}
+
+#logout:hover{
+  cursor: pointer;
+}
+
+form{
+  margin-top:10px;
+  #person{
+    margin-top: 5px;
+    margin-left: -5px;
+    font-size: 2.5em;
+    color: $primary-color;
+  }
+  ::-webkit-input-placeholder{
+color: #aaa;
+  }
+  /* label color */
+   .input-field label {
+     color: #aaa;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: $primary-color;
+   }
+   /* label underline focus color */
+   .input-field input{
+     font-size: 1.5em;
+       &:focus {
+       border-bottom: 1px solid $primary-color;
+       box-shadow: 0 1px 0 0 $primary-color;
+      }
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+}
+h6 > span{
+  font-size: 1.5em;
+}
+.side-nav i{
+  color: #000;
+  margin-left: 15%;
+}
+
+#mobile-demo{
+background: teal;
+  a,i{
+  color: white !important;
+  }
+}
+
+.flatui{
+  background:$primary-color;
+  color: white;
+}
+
+row{
+margin-bottom: 0;
+}
+hr{
+  width: 10%;
+  color: red;
+  border-top:1px dashed black;
+  margin-top: 20px;
+  margin-bottom: 20px;  
+}
+#top{
+  background: #eee;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.nav-wrapper{
+  text-align: center;
+}
+.card-title{
+  font-size: 1.7em !important;
+}
+.card li{
+  list-style: none;
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
+body{
+  background: #eee;
+}
+
+.card{
+  margin-top: 0px !important;
+}
+
+//Media Queries
+@media(max-width:992px){
+  .brand-logo{
+    margin-left: -9%;
+  }
+  .nav-wrapper span{
+  display: block;
+  position: absolute;
+  left: 50px;
+  top:0px;
+  font-size: 1em;
+}
+}
+
+@media (max-width:660px) {
+.nav-wrapper #title {
+  position: absolute;
+  right: 10px;
+  font-size: 1.6em; 
+}
+  .side-nav i{
+    margin-top: 18px;
+  }
+}

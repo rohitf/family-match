@@ -1,0 +1,33 @@
+<template name="main">
+    <div id=navContainer>
+    {{> nav}}
+    </div>
+    {{> yield}}
+<script type="text/javascript">
+	$(function(){
+  
+  if(Session.get('user_id'))
+    $('#navContainer').show();
+  else
+    $('#navContainer').hide();
+
+
+  $(".button-collapse").sideNav();
+
+  $('.datepicker').pickadate({
+      selectMonths: true, // Creates a dropdown to control month
+      selectYears: 200,
+      closeOnSelect: true,
+      clear: 'Clear',
+      header: 'none',
+      close: 'Done',
+      onOpen: function(){
+        $('.picker__date-display').remove();
+      },
+      onSet: function(){
+        $('.picker__date-display').remove();
+      }
+  });
+});
+</script>
+</template>
